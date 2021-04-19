@@ -5,11 +5,14 @@ var bet = 1;
 const WON = 1;
 const LOST = 0;
 
-var random = Math.floor(Math.random() * 2);
-if(random == WON){
-    stake++;
+
+while(stake > 50 && stake < 150){
+    var random = Math.floor(Math.random() * 2);
+    if(random == WON){
+        stake++;
+    }
+    else{
+        stake--;
+    }
+    console.log(stake);
 }
-else{
-    stake--;
-}
-console.log(stake);
